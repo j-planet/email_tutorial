@@ -3,7 +3,7 @@ import {
 } from './types.jsx';
 
 
-export default function fetchUsers() {
+export function fetchUsers() {
     return {
         type: FETCH_USERS,
         payload: [

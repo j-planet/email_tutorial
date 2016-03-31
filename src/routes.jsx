@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import HomePage from './containers/home_page.jsx';
 import FramePage from './containers/frame_page.jsx';
 import ChildPage from './containers/child_page.jsx';
+import UserList from './containers/user_list.jsx';
 
 const routes =
     < Route path="/" component={FramePage} >
@@ -13,5 +14,8 @@ const routes =
     </Route>;
 
 export default (
-    <Router history={browserHistory} routes={routes} />
+    //<Router history={browserHistory} routes={routes} />
+    <div>
+        <UserList />
+    </div>
 );
