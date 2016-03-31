@@ -15,7 +15,7 @@ export default function(myState=_INITIAL_STATE, action)
     switch (action.type)
     {
         case FETCH_USERS:   // a list of users
-            return [...myState, ...action.payload ];
+            return [...myState, ...action.payload.data ];
         default:
             return myState;
     }

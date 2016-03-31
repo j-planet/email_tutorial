@@ -7,7 +7,6 @@ import * as actions from '../actions';
 class UserList extends Component {
 
     componentWillMount() {
-        console.log('>>>>>', actions);
         this.props.fetchUsers();
     }
 
@@ -15,15 +14,15 @@ class UserList extends Component {
         return (
             <div className="card card-block" key={user.name}>
                 <h4 className="card-title">{user.name}</h4>
-                <p className="card-text">Apple Inc.</p>
-                <a className="btn btn-primary">Email</a>
+                <p className="card-text">{user.company.name}</p>
+                <a className="btn btn-primary">{user.website}</a>
             </div>
         );
     }
 
     render() {
         return (
-            <div>
+            <div className="user-list">
                 { this.props.users.map(this.renderUser) }
             </div>
         );

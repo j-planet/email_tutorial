@@ -3,6 +3,7 @@
     "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors"
   },
   "dependencies": {
+    "axios": "^0.9.1",
     "babel": "^6.3.26",
     "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
